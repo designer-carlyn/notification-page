@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Notification Page Solution](https://cs-notification-page-solution.netlify.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/notification-page-with-htmlcssreactjs-k9zzV0Bw0-)
+- Live Site URL: [Live site URL](https://cs-notification-page-solution.netlify.app/)
 
 ### Built with
 
