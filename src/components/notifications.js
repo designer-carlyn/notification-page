@@ -56,6 +56,49 @@ const notifications = [
     notifImage: "",
     notifImageName: "",
   },
+  {
+    avatar:
+      "https://ik.imagekit.io/designers/notification-page/avatar/avatar-kimberly-smith_h8Ej_K0MKD.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832873",
+    username: "Kimberly Smith",
+    content: "commented on your picture",
+    topic: "",
+    isRead: true,
+    date: "1 week ago",
+    isComment: false,
+    comment: "",
+    isNotifImage: true,
+    notifImage:
+      "https://ik.imagekit.io/designers/notification-page/avatar/image-chess__kvVY2Bri.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832729",
+    notifImageName: "Kimberly Smith",
+  },
+  {
+    avatar:
+      "https://ik.imagekit.io/designers/notification-page/avatar/avatar-nathan-peterson_WuqSVtfKR.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832761",
+    username: "Nathan Peterson",
+    content: "reacted to your recent post",
+    topic: "5 end-game strategies to increase your win rate",
+    isRead: true,
+    date: "2 weeks ago",
+    isComment: false,
+    comment: "",
+    isNotifImage: false,
+    notifImage: "",
+    notifImageName: "",
+  },
+  {
+    avatar:
+      "https://ik.imagekit.io/designers/notification-page/avatar/avatar-anna-kim_pyS98zpCjV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832876",
+    username: "Anna Kim",
+    content: "left the group",
+    topic: "Chess Club",
+    isRead: true,
+    date: "2 weeks ago",
+    isComment: false,
+    comment: "",
+    isNotifImage: false,
+    notifImage: "",
+    notifImageName: "",
+  },
 ];
 
 export default notifications;
