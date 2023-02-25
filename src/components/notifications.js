@@ -49,7 +49,7 @@ const notifications = [
     avatar:
       "https://ik.imagekit.io/designers/notification-page/avatar/avatar-rizky-hasanuddin_kaw-53zQw.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832759",
     username: "Rizky Hasanuddin",
-    content: " ent you a private message",
+    content: "sent you a private message",
     topic: "",
     isRead: true,
     date: "5 days ago",

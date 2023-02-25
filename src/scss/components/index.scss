@@ -72,6 +72,7 @@ body {
       border-radius: 10px;
       background: transparent;
       margin-bottom: 10px;
+      cursor: pointer;
 
       .item-avatar {
         img {
@@ -84,9 +85,9 @@ body {
       .item-content {
         .content-description {
           span {
-            font-size: 15px;
+            font-size: 14px;
             color: var(--d-grayish-blue);
-            margin-bottom: 3px;
+            margin-bottom: 4px;
           }
 
           .description-link {
@@ -120,7 +121,7 @@ body {
         }
 
         .content-date {
-          font-size: 14px;
+          font-size: 13px;
           color: var(--grayish-blue);
         }
 
@@ -151,6 +152,10 @@ body {
       }
 
       &.unread {
+        background: var(--vl-grayish-blue);
+      }
+
+      &:hover {
         background: var(--vl-grayish-blue);
       }
     }
