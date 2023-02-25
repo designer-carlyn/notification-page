@@ -60,9 +60,6 @@ const IndexPage = () => {
               ></NotificationsItem>
             );
           })}
-          {/* {notifications.map((notification) => {
-            return <h1 key={notification.id}>{notification.name}</h1>;
-          })} */}
         </div>
       </div>
     </main>
