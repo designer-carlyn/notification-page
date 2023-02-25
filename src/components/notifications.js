@@ -1,6 +1,5 @@
 const notifications = [
   {
-    id: 1,
     avatar:
       "https://ik.imagekit.io/designers/notification-page/avatar/avatar-mark-webber_yqywHCG4x3.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832838",
     username: "Mark Webber",
@@ -15,7 +14,6 @@ const notifications = [
     notifImageName: "",
   },
   {
-    id: 2,
     avatar:
       "https://ik.imagekit.io/designers/notification-page/avatar/avatar-angela-gray_cb8YJCGX69.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832800",
     username: "Angela Gray",
@@ -30,7 +28,6 @@ const notifications = [
     notifImageName: "",
   },
   {
-    id: 3,
     avatar:
       "https://ik.imagekit.io/designers/notification-page/avatar/avatar-jacob-thompson_NmXsXC1HM.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832795",
     username: "Jacob Thompson",
@@ -45,7 +42,6 @@ const notifications = [
     notifImageName: "",
   },
   {
-    id: 4,
     avatar:
       "https://ik.imagekit.io/designers/notification-page/avatar/avatar-rizky-hasanuddin_kaw-53zQw.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1677287832759",
     username: "Rizky Hasanuddin",

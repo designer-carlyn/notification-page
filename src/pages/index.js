@@ -1,5 +1,5 @@
 /* Import React */
-import React from "react";
+import React, { useState } from "react";
 
 /* Import Components */
 import NotificationsHeader from "../components/notifications-header";
@@ -14,11 +14,17 @@ import "../scss/components/index.scss";
 import notifications from "../components/notifications";
 
 const IndexPage = () => {
-  console.log(notifications);
+  const [unread, setUnread] = useState(notifications);
 
   let unreadCounter = notifications.filter(
     (notification) => notification.isRead === false
   );
+
+  const clickNotification = (event, index) => {
+    let newArr = [...unread];
+    newArr[index].isRead = true;
+    setUnread(newArr);
+  };
 
   return (
     <main className="notifications">
@@ -27,10 +33,11 @@ const IndexPage = () => {
           counter={unreadCounter.length}
         ></NotificationsHeader>
         <div className="notifications__list">
-          {notifications.map((notification) => {
+          {notifications.map((notification, index) => {
             return (
               <NotificationsItem
-                key={notification.id}
+                key={index}
+                id={index}
                 isRead={notification.isRead}
                 username={notification.username}
                 avatar={notification.avatar}
@@ -42,6 +49,7 @@ const IndexPage = () => {
                 isNotifImage={notification.isNotifImage}
                 notifImage={notification.notifImage}
                 notifImageName={notification.notifImage}
+                clickNotification={(event) => clickNotification(event, index)}
               ></NotificationsItem>
             );
           })}

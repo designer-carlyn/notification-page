@@ -12,9 +12,14 @@ const NotificationsItem = ({
   isNotifImage,
   notifImage,
   notifImageName,
+  clickNotification,
 }) => {
   return (
-    <div className={"notification-item " + (!isRead ? "unread" : "")}>
+    <div
+      className={"notification-item " + (!isRead ? "unread" : "")}
+      onClick={clickNotification}
+      role="presentation"
+    >
       <div className="item-avatar">
         <img src={avatar} alt={username}></img>
       </div>
