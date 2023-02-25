@@ -14,12 +14,18 @@ import "../scss/components/index.scss";
 import notifications from "../components/notifications";
 
 const IndexPage = () => {
-  const counter = 3;
+  console.log(notifications);
+
+  let unreadCounter = notifications.filter(
+    (notification) => notification.isRead === false
+  );
 
   return (
     <main className="notifications">
       <div className="notifications__holder">
-        <NotificationsHeader counter={counter}></NotificationsHeader>
+        <NotificationsHeader
+          counter={unreadCounter.length}
+        ></NotificationsHeader>
         <div className="notifications__list">
           {notifications.map((notification) => {
             return (
