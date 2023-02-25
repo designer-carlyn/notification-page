@@ -26,11 +26,18 @@ const IndexPage = () => {
     setUnread(newArr);
   };
 
+  function markAllAsRead() {
+    unread.map((notification) => {
+      return setUnread((notification.isRead = true));
+    });
+  }
+
   return (
     <main className="notifications">
       <div className="notifications__holder">
         <NotificationsHeader
           counter={unreadCounter.length}
+          markAsRead={markAllAsRead}
         ></NotificationsHeader>
         <div className="notifications__list">
           {notifications.map((notification, index) => {
