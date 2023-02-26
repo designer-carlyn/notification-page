@@ -27,9 +27,19 @@ const IndexPage = () => {
   };
 
   function markAllAsRead() {
-    unread.map((notification) => {
-      return setUnread((notification.isRead = true));
+    let newArr = [...unread];
+    newArr.map((item) => {
+      return (item.isRead = true);
     });
+    setUnread(newArr);
+  }
+
+  function markAllAsUnread() {
+    let newArr = [...unread];
+    newArr.map((item) => {
+      return (item.isRead = false);
+    });
+    setUnread(newArr);
   }
 
   return (
@@ -38,6 +48,7 @@ const IndexPage = () => {
         <NotificationsHeader
           counter={unreadCounter.length}
           markAsRead={markAllAsRead}
+          markAsUnread={markAllAsUnread}
         ></NotificationsHeader>
         <div className="notifications__list">
           {notifications.map((notification, index) => {
@@ -45,17 +56,7 @@ const IndexPage = () => {
               <NotificationsItem
                 key={index}
                 id={index}
-                isRead={notification.isRead}
-                username={notification.username}
-                avatar={notification.avatar}
-                content={notification.content}
-                topic={notification.topic}
-                date={notification.date}
-                comment={notification.comment}
-                isComment={notification.isComment}
-                isNotifImage={notification.isNotifImage}
-                notifImage={notification.notifImage}
-                notifImageName={notification.notifImage}
+                {...notification}
                 clickNotification={(event) => clickNotification(event, index)}
               ></NotificationsItem>
             );

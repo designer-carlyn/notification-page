@@ -18,5 +18,11 @@ module.exports = {
         icon: "src/images/favicon.png",
       },
     },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en-GB",
+      },
+    },
   ],
 };
