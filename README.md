@@ -37,14 +37,13 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Preprocessor (SCSS)
 - Flexbox
-- Mobile-first workflow
+- [Sass](https://sass-lang.com/) - CSS Preprocessor
 - [React](https://reactjs.org/) - JS library
 - [Gatsby.js](https://www.gatsbyjs.com/) - React framework
 
 ## Author
 
 - Website - [Creative Portfolio](https://designer-carlyn.github.io/my-porfolio/)
-- Frontend Mentor - [designer-carlyn](https://www.frontendmentor.io/profile/designer-carlyn)
+- Frontend Mentor - [Carlo](https://www.frontendmentor.io/profile/designer-carlyn)
 - Linkedin - [Carlo Arlyn Segovia](linkedin.com/in/carlo-arlyn-segovia-a25b33158)
