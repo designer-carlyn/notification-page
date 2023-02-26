@@ -37,11 +37,12 @@ body {
     align-items: center;
     margin-bottom: 20px;
 
-    h3 {
+    h1 {
       color: var(--vd-grayish-blue);
       display: flex;
       align-items: center;
       margin-right: auto;
+      font-size: 20px;
 
       span {
         background-color: var(--c-blue);
