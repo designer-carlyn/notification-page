@@ -76,7 +76,7 @@ export const Head = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Simple website thet will distinguish between `unread` and `read` notifications."
+      content="Simple website that will distinguish between `unread` and `read` notifications."
     />
     <meta
       property="og:image"
