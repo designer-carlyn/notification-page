@@ -69,4 +69,18 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Notification Page</title>;
+export const Head = () => (
+  <>
+    <title>Notification Page</title>
+    <meta property="og:title" content="Notification Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Simple website thet will distinguish between `unread` and `read` notifications."
+    />
+    <meta
+      property="og:image"
+      content="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/notification_page_2yEcQIrl1.webp?updatedAt=1678068889281"
+    />
+  </>
+);
